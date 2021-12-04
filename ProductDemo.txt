@@ -1,0 +1,13 @@
+package constructordemo;
+public class ProductDemo {
+    public static void main(String[]args){
+        Product p1 = new Product();
+        p1.name="Samsung J5 Mobile";p1.price=10000;
+        Product p2 = new Product("Tomato Hybrid", 10, "Vegetable");
+       Product p3 = new Product("Apple", 2000, "Fruit");
+    System.out.println(p1.name+" "+p1.qtyInStock+" "+p1.type);
+    System.out.println(p2);
+    System.out.println(p3);
+    }
+}
+

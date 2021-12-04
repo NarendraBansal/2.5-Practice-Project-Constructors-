@@ -1,0 +1,26 @@
+package constructordemo;
+public class Product {
+    String name;
+    double price;
+    String type;
+    double qtyInStock;
+    public Product() { // default useless constructor 
+    }
+    public Product(String name, double price, String type) {
+        super();
+        this.name = name;
+        this.price = price;
+        this.type = type;
+    }
+    public Product(String name, double price, String type, double qtyInStock) {
+        super();
+        this.name = name;
+        this.price = price;
+        this.type = type;
+        this.qtyInStock = qtyInStock;
+    }
+    @Override
+    public String toString() {
+        return "Product{" + "name=" + name + ", price=" + price + ", type=" + type + ", qtyInStock=" + qtyInStock + '}';
+    }
+}
